@@ -1,0 +1,40 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    z-index: 100;
+    mix-blend-mode: difference;
+    color: white;
+    /* Will appear black on white bg due to difference blend mode */
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.cart {
+    text-align: right;
+}
+
+.breadcrumbs {
+    font-size: 10px;
+    opacity: 0.8;
+}
+
+.separator {
+    margin: 0 5px;
+}
