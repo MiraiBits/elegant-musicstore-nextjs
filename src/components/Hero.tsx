@@ -5,29 +5,24 @@ export default function Hero() {
     return (
         <section className={styles.hero}>
             <div className={styles.content}>
-                <h1 className={styles.title}>TX-1 Field</h1>
-                <p className={styles.subtitle}>the portable synthesizer field system.</p>
+                <h1 className={styles.title}>Channel Splitter</h1>
+                <p className={styles.subtitle}>professional-grade audio utility.</p>
 
                 <div className={styles.actions}>
                     <button className={styles.buyButton}>Buy Now</button>
-                    <span className={styles.price}>$1999</span>
+                    <span className={styles.price}>$199</span>
                 </div>
             </div>
 
             <div className={styles.imageContainer}>
-                {/* Placeholder for now if image is missing */}
-                <div className={styles.placeholderImage}>
-                    TX-1 Field Top View
-                </div>
-                {/* Undo comment when image is available
-        <Image 
-          src="/images/tx1_top_view.webp" 
-          alt="TX-1 Field Top View" 
-          fill 
-          priority
-          className={styles.image}
-        />
-        */}
+                {/* Product Image Placeholder: Replace 'public/images/hero_product.svg' with your actual image */}
+                <Image
+                    src="/images/hero_product.svg"
+                    alt="Yellow Channel Splitter"
+                    fill
+                    priority
+                    className={styles.image}
+                />
             </div>
         </section>
     );

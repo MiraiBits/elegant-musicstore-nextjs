@@ -1,20 +1,36 @@
 :root {
-  /* Colors */
-  --bg-color: #f5f5f7;
-  --bg-dark: #000000;
-  --text-primary: #000000;
+  /* Default to Light Mode (Cream) */
+  --bg-color: #FFFDD0;
+  /* Cream */
+  --bg-secondary: #FDFD96;
+  /* Pastel Yellow */
+  --text-primary: #121212;
+  /* Black */
   --text-secondary: #888888;
-  --text-inverse: #ffffff;
-  --accent-color: #ff3300; /* Classic TE Orange/Red accent */
+  /* Grey */
+  --accent-color: #FFD700;
+  /* Yellow */
+  --border-color: #e0e0d0;
 
-  /* Spacing */
   --spacing-unit: 8px;
   --container-padding: 40px;
   --header-height: 60px;
 
-  /* Typography */
   --font-primary: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-mono: "Roboto Mono", monospace;
+}
+
+[data-theme='dark'] {
+  --bg-color: #121212;
+  /* Black */
+  --bg-secondary: #1E1E1E;
+  /* Dark Grey */
+  --text-primary: #FFFDD0;
+  /* Cream - Soft white equivalent */
+  --text-secondary: #888888;
+  --accent-color: #FFD700;
+  /* Yellow */
+  --border-color: #333333;
 }
 
 * {
@@ -31,6 +47,7 @@ body {
   color: var(--text-primary);
   font-family: var(--font-primary);
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 a {

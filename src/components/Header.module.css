@@ -5,12 +5,12 @@
     width: 100%;
     padding: 20px 40px;
     z-index: 100;
-    mix-blend-mode: difference;
-    color: white;
-    /* Will appear black on white bg due to difference blend mode */
+    color: var(--text-primary);
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    background: var(--bg-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .grid {
@@ -20,6 +20,16 @@
     margin-bottom: 20px;
 }
 
+.logoLink {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logoImage {
+    display: block;
+}
+
 .nav {
     display: flex;
     gap: 30px;
@@ -27,7 +37,10 @@
 }
 
 .cart {
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
 }
 
 .breadcrumbs {

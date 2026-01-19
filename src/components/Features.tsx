@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./Features.module.css";
 
 export default function Features() {
@@ -5,25 +6,31 @@ export default function Features() {
         <section className={styles.features}>
             <div className={styles.container}>
                 <div className={styles.intro}>
-                    <h2>100 new features.</h2>
-                    <p>rebuilt from the ground up. stereo throughout. bluetooth midi. 24 hour battery life.</p>
+                    <h2>Simply split.</h2>
+                    <p>take a single microphone signal and split it cleanly into two isolated outputs. reliable signal distribution without noise, impedance mismatch, or ground-loop hum.</p>
                 </div>
 
                 <div className={styles.grid}>
                     <div className={styles.featureItem}>
-                        <div className={styles.placeholder}>Detail Shot 1</div>
-                        <h3>Thin Aluminum Body</h3>
-                        <p>precision machined from a single block.</p>
+                        <div className={styles.imageWrapper}>
+                            <Image src="/images/feature_placeholder.svg" alt="Clean Signal" fill className={styles.image} />
+                        </div>
+                        <h3>Active Isolation</h3>
+                        <p>prevent noise and signal degradation.</p>
                     </div>
                     <div className={styles.featureItem}>
-                        <div className={styles.placeholder}>Detail Shot 2</div>
-                        <h3>High Res Display</h3>
-                        <p>flush mounted oled with 60fps graphics.</p>
+                        <div className={styles.imageWrapper}>
+                            <Image src="/images/feature_placeholder.svg" alt="Wireless Control" fill className={styles.image} />
+                        </div>
+                        <h3>Bluetooth LE</h3>
+                        <p>modern wireless control via smartphone.</p>
                     </div>
                     <div className={styles.featureItem}>
-                        <div className={styles.placeholder}>Detail Shot 3</div>
-                        <h3>New Field System</h3>
-                        <p>refined interaction for faster workflows.</p>
+                        <div className={styles.imageWrapper}>
+                            <Image src="/images/feature_placeholder.svg" alt="Robust Enclosure" fill className={styles.image} />
+                        </div>
+                        <h3>Robust Enclosure</h3>
+                        <p>black anodized aluminum with yellow accents.</p>
                     </div>
                 </div>
             </div>

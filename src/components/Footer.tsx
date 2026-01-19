@@ -5,7 +5,7 @@ export default function Footer() {
         <footer className={styles.footer}>
             <div className={styles.grid}>
                 <div className={styles.column}>
-                    <h4>teenage engineering</h4>
+                    <h4>yellow audio</h4>
                     <p>products</p>
                     <p>now</p>
                     <p>store</p>
@@ -29,7 +29,7 @@ export default function Footer() {
             </div>
 
             <div className={styles.bottom}>
-                <p>©2025 teenage engineering. all rights reserved.</p>
+                <p>©2026 yellow audio. all rights reserved.</p>
             </div>
         </footer>
     );

@@ -1,8 +1,9 @@
 .footer {
     padding: 80px 40px 40px;
-    background-color: #f5f5f7;
-    border-top: 1px solid #e0e0e0;
+    background-color: var(--bg-color);
+    border-top: 1px solid var(--border-color);
     font-size: 12px;
+    transition: background-color 0.3s ease;
 }
 
 .grid {
@@ -16,22 +17,23 @@
     font-weight: 500;
     margin-bottom: 20px;
     text-transform: uppercase;
+    color: var(--text-primary);
 }
 
 .column p {
-    color: #888;
+    color: var(--text-secondary);
     margin-bottom: 10px;
     cursor: pointer;
 }
 
 .column p:hover {
     text-decoration: underline;
-    color: #000;
+    color: var(--accent-color);
 }
 
 .bottom {
-    border-top: 1px solid #e0e0e0;
+    border-top: 1px solid var(--border-color);
     padding-top: 20px;
-    color: #888;
+    color: var(--text-secondary);
     text-align: center;
 }

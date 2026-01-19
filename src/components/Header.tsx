@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import ThemeToggle from "./ThemeToggle";
 import styles from "./Header.module.css";
 
 export default function Header() {
@@ -6,7 +8,17 @@ export default function Header() {
         <header className={styles.header}>
             <div className={styles.grid}>
                 <div className={styles.logo}>
-                    <Link href="/">teenage engineering</Link>
+                    <Link href="/" className={styles.logoLink}>
+                        {/* Logo Placeholder: Replace /images/logo.svg with your logo file */}
+                        <Image
+                            src="/images/logo.svg"
+                            alt="Yellow Audio Logo"
+                            width={24}
+                            height={24}
+                            className={styles.logoImage}
+                        />
+                        <span>yellow audio</span>
+                    </Link>
                 </div>
 
                 <nav className={styles.nav}>
@@ -15,12 +27,13 @@ export default function Header() {
                 </nav>
 
                 <div className={styles.cart}>
-                    <Link href="/cart">cart (0)</Link>
+                    <ThemeToggle />
+                    <Link href="/cart" className={styles.cartLink}>cart (0)</Link>
                 </div>
             </div>
 
             <div className={styles.breadcrumbs}>
-                <span>TX-1 Field</span>
+                <span>Channel Splitter</span>
                 <span className={styles.separator}>/</span>
                 <span>overview</span>
             </div>
