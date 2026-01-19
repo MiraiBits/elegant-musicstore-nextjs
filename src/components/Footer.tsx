@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -6,19 +7,19 @@ export default function Footer() {
             <div className={styles.grid}>
                 <div className={styles.column}>
                     <h4>yellow audio</h4>
-                    <p>products</p>
+                    <Link href="/products"><p>products</p></Link>
                     <p>now</p>
-                    <p>store</p>
+                    <Link href="/store"><p>store</p></Link>
                 </div>
                 <div className={styles.column}>
                     <h4>support</h4>
                     <p>downloads</p>
                     <p>guides</p>
-                    <p>contact</p>
+                    <Link href="/contact"><p>contact</p></Link>
                 </div>
                 <div className={styles.column}>
                     <h4>company</h4>
-                    <p>about us</p>
+                    <Link href="/about"><p>about us</p></Link>
                     <p>press</p>
                     <p>career</p>
                 </div>
