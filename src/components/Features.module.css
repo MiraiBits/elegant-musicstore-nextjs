@@ -35,11 +35,21 @@
     gap: 40px;
 }
 
+.featureItem {
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: default;
+}
+
+.featureItem:hover {
+    transform: translateY(-8px);
+}
+
 .featureItem h3 {
     font-size: 14px;
     text-transform: uppercase;
     margin: 20px 0 10px;
     color: var(--text-primary);
+    font-weight: 600;
 }
 
 .featureItem p {
@@ -54,8 +64,19 @@
     background: var(--bg-secondary);
     border: 1px solid var(--border-color);
     overflow: hidden;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.featureItem:hover .imageWrapper {
+    border-color: var(--accent-color);
 }
 
 .image {
     object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.featureItem:hover .image {
+    transform: scale(1.03);
 }

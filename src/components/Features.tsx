@@ -13,21 +13,21 @@ export default function Features() {
                 <div className={styles.grid}>
                     <div className={styles.featureItem}>
                         <div className={styles.imageWrapper}>
-                            <Image src="/images/feature_placeholder.svg" alt="Clean Signal" fill className={styles.image} />
+                            <Image src="/images/feature_placeholder.svg" alt="Clean Signal" fill sizes="(max-width: 768px) 100vw, 33vw" className={styles.image} />
                         </div>
                         <h3>Active Isolation</h3>
                         <p>prevent noise and signal degradation.</p>
                     </div>
                     <div className={styles.featureItem}>
                         <div className={styles.imageWrapper}>
-                            <Image src="/images/feature_placeholder.svg" alt="Wireless Control" fill className={styles.image} />
+                            <Image src="/images/feature_placeholder.svg" alt="Wireless Control" fill sizes="(max-width: 768px) 100vw, 33vw" className={styles.image} />
                         </div>
                         <h3>Bluetooth LE</h3>
                         <p>modern wireless control via smartphone.</p>
                     </div>
                     <div className={styles.featureItem}>
                         <div className={styles.imageWrapper}>
-                            <Image src="/images/feature_placeholder.svg" alt="Robust Enclosure" fill className={styles.image} />
+                            <Image src="/images/feature_placeholder.svg" alt="Robust Enclosure" fill sizes="(max-width: 768px) 100vw, 33vw" className={styles.image} />
                         </div>
                         <h3>Robust Enclosure</h3>
                         <p>black anodized aluminum with yellow accents.</p>

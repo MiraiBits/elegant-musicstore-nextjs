@@ -1,6 +1,33 @@
-<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="800" height="600" fill="#E5E5E5"/>
-<rect x="200" y="150" width="400" height="300" rx="10" fill="#121212"/>
-<text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="24" fill="#FFD700">REPLACE ME: public/images/hero_product.png</text>
-<circle cx="400" cy="300" r="50" stroke="#FFD700" stroke-width="4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <rect width="800" height="600" fill="transparent" />
+  <!-- Shadow -->
+  <rect x="170" y="210" width="460" height="260" rx="20" fill="rgba(0,0,0,0.1)"/>
+  <!-- Device Body -->
+  <rect x="150" y="150" width="500" height="300" rx="20" fill="#ffcc00" stroke="#121212" stroke-width="8"/>
+  <rect x="150" y="150" width="500" height="300" rx="20" fill="url(#grad)" opacity="0.2"/>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0.2" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Screen/Label area -->
+  <rect x="200" y="180" width="400" height="60" rx="10" fill="#121212" />
+  <text x="400" y="220" font-family="monospace" font-size="28" font-weight="bold" fill="#ffcc00" text-anchor="middle" letter-spacing="4">TX-1 FIELD</text>
+  
+  <!-- Jacks / Knobs -->
+  <circle cx="250" cy="330" r="35" fill="#e9ecef" stroke="#121212" stroke-width="6"/>
+  <circle cx="250" cy="330" r="20" fill="#121212"/>
+  
+  <circle cx="400" cy="330" r="35" fill="#e9ecef" stroke="#121212" stroke-width="6"/>
+  <circle cx="400" cy="330" r="20" fill="#121212"/>
+
+  <circle cx="550" cy="330" r="35" fill="#e9ecef" stroke="#121212" stroke-width="6"/>
+  <circle cx="550" cy="330" r="20" fill="#121212"/>
+  
+  <!-- Labels -->
+  <text x="250" y="410" font-family="sans-serif" font-size="14" font-weight="bold" fill="#121212" text-anchor="middle">IN</text>
+  <text x="400" y="410" font-family="sans-serif" font-size="14" font-weight="bold" fill="#121212" text-anchor="middle">OUT L</text>
+  <text x="550" y="410" font-family="sans-serif" font-size="14" font-weight="bold" fill="#121212" text-anchor="middle">OUT R</text>
 </svg>

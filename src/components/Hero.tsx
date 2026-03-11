@@ -21,6 +21,7 @@ export default function Hero() {
                     alt="Yellow Channel Splitter"
                     fill
                     priority
+                    sizes="(max-width: 768px) 100vw, 60vw"
                     className={styles.image}
                 />
             </div>

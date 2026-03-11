@@ -1,20 +1,16 @@
 :root {
-  /* Default to Light Mode (Cream) */
-  --bg-color: #FFFDD0;
-  /* Cream */
-  --bg-secondary: #FDFD96;
-  /* Pastel Yellow */
+  /* Default to Light Mode (Off-white TE style) */
+  --bg-color: #f8f9fa;
+  --bg-secondary: #e9ecef;
   --text-primary: #121212;
-  /* Black */
-  --text-secondary: #888888;
-  /* Grey */
-  --accent-color: #FFD700;
-  /* Yellow */
-  --border-color: #e0e0d0;
+  --text-secondary: #6c757d;
+  --accent-color: #ffcc00; /* Vibrant yellow */
+  --border-color: #dee2e6;
+  --glow-color: rgba(255, 204, 0, 0.4);
 
   --spacing-unit: 8px;
   --container-padding: 40px;
-  --header-height: 60px;
+  --header-height: 70px;
 
   --font-primary: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-mono: "Roboto Mono", monospace;
@@ -22,15 +18,12 @@
 
 [data-theme='dark'] {
   --bg-color: #121212;
-  /* Black */
-  --bg-secondary: #1E1E1E;
-  /* Dark Grey */
-  --text-primary: #FFFDD0;
-  /* Cream - Soft white equivalent */
-  --text-secondary: #888888;
-  --accent-color: #FFD700;
-  /* Yellow */
-  --border-color: #333333;
+  --bg-secondary: #1a1a1a;
+  --text-primary: #f8f9fa;
+  --text-secondary: #adb5bd;
+  --accent-color: #ffcc00;
+  --border-color: #343a40;
+  --glow-color: rgba(255, 204, 0, 0.15);
 }
 
 * {
@@ -47,12 +40,41 @@ body {
   color: var(--text-primary);
   font-family: var(--font-primary);
   -webkit-font-smoothing: antialiased;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: var(--accent-color);
+  color: #121212;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.7;
 }
 
 /* Utilities */
